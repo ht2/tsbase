@@ -12,7 +12,7 @@ export default (config: Config, handler: Handler): Handler => {
     return handler(req, res).catch((err: {} | Error | BaseError) => {
       const errorId = uuid();
       logger.error(errorId, err);
-      return handleError({ translator, errorId, res, err });
+      handleError({ translator, errorId, res, err });
     });
   };
 };

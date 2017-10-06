@@ -1,4 +1,4 @@
-/* tslint:disable:no-class no-this */
+/* tslint:disable:no-class no-this readonly-keyword */
 export default class implements Error {
   public name: string;
   public message: string;
