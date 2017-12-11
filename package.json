@@ -39,7 +39,7 @@
     "cors": "^2.8.3",
     "express": "^4.15.3",
     "file-stream-rotator": "^0.2.0",
-    "fs-extra": "^4.0.2",
+    "fs-extra": "^5.0.0",
     "helmet": "^3.6.1",
     "knex": "^0.14.0",
     "lodash": "^4.17.4",
