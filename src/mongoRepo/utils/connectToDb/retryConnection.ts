@@ -8,6 +8,6 @@ export default async (config: Config, retries: number): Promise<Connection> => {
     throw new Error('Too many retries');
   }
   config.logger.info(`Starting retry ${retries} in ${config.retryGapMS}ms`);
-  await delay(config.retryGapMS);
+  await Promise.resolve(delay(config.retryGapMS));
   return createConnection(config, retries);
 };
