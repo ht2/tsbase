@@ -6,5 +6,6 @@ export default (): RequestHandler => {
     credentials: true,
     origin: true,
     preflightContinue: true,
+    exposedHeaders: ['ETag'],
   });
 };
