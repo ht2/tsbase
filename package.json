@@ -65,7 +65,6 @@
     "@types/knex": "0.14.15",
     "@types/lodash": "4.14.110",
     "@types/mocha": "2.2.48",
-    "@types/moment": "2.13.0",
     "@types/mongodb": "3.0.18",
     "@types/morgan": "1.7.35",
     "@types/uuid": "3.4.3",
