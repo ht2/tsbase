@@ -77,7 +77,7 @@
     "tslint-consistent-codestyle": "1.13.3",
     "tslint-immutable": "4.6.0",
     "tslint-microsoft-contrib": "5.1.0",
-    "typescript": "2.9.2"
+    "typescript": "3.0.1"
   },
   "publishConfig": {
     "access": "public"
