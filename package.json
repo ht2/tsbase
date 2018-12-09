@@ -40,7 +40,7 @@
     "file-stream-rotator": "^0.4.0",
     "fs-extra": "^5.0.0",
     "helmet": "^3.12.1",
-    "knex": "^0.15.0",
+    "knex": "^0.16.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.1",
     "mongodb": "^3.0.8",
