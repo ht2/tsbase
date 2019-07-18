@@ -64,7 +64,7 @@
     "@types/lodash": "4.14.136",
     "@types/mocha": "2.2.48",
     "@types/mongodb": "3.0.18",
-    "@types/morgan": "1.7.35",
+    "@types/morgan": "1.7.36",
     "@types/uuid": "3.4.5",
     "@types/winston": "2.4.4",
     "cz-conventional-changelog": "2.1.0",
