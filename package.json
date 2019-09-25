@@ -71,7 +71,7 @@
     "jscpd": "0.6.22",
     "rimraf": "2.7.1",
     "tslint": "5.20.0",
-    "tslint-consistent-codestyle": "1.15.1",
+    "tslint-consistent-codestyle": "1.16.0",
     "tslint-immutable": "4.9.1",
     "tslint-microsoft-contrib": "5.2.1",
     "typescript": "3.5.3"
