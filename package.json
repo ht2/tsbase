@@ -62,7 +62,7 @@
     "@types/helmet": "0.0.44",
     "@types/knex": "0.15.2",
     "@types/lodash": "4.14.141",
-    "@types/mocha": "2.2.48",
+    "@types/mocha": "5.2.7",
     "@types/mongodb": "3.0.18",
     "@types/morgan": "1.7.37",
     "@types/uuid": "3.4.5",
