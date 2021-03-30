@@ -24,7 +24,6 @@ export default ({ config, errorId, res, err }: Options): Response => {
   if (err instanceof InvalidAuth) {
     const code = 400;
     const message = translator.invalidAuthError(err);
-    logError(message);
     return sendMessage({ res, code, errorId, message });
   }
   if (err instanceof Warnings) {
@@ -34,25 +33,21 @@ export default ({ config, errorId, res, err }: Options): Response => {
       return translateWarning(translator, warning);
     });
     const obj = { warnings: strWarnings };
-    logError('Validation warnings', strWarnings);
     return sendObject({ res, code, errorId, obj });
   }
   if (err instanceof NoModel) {
     const code = 404;
     const message = translator.noModelError(err);
-    logError(message);
     return sendMessage({ res, code, errorId, message });
   }
   if (err instanceof Unauthorised) {
     const code = 401;
     const message = translator.unauthorisedError(err);
-    logError(message);
     return sendMessage({ res, code, errorId, message });
   }
   if (err instanceof Forbidden) {
     const code = 403;
     const message = translator.forbiddenError(err);
-    logError(message);
     return sendMessage({ res, code, errorId, message });
   }
   {
