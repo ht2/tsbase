@@ -23,9 +23,13 @@ export default (config: Config) => {
     if (identifierList.length === 0) {
       return;
     }
-    await config.client.deleteObjects({
-      Bucket: config.bucketName,
-      Delete: { Objects: identifierList },
-    }).promise();
+    try {
+      await config.client.deleteObjects({
+        Bucket: config.bucketName,
+        Delete: { Objects: identifierList },
+      }).promise();
+    } catch (err) {
+      console.error(err);
+    }
   };
 };
