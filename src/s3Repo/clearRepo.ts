@@ -1,4 +1,4 @@
-import { ListObjectsCommand, DeleteObjectsCommand, ObjectIdentifier } from '@aws-sdk/client-s3';
+import { DeleteObjectsCommand, ListObjectsCommand, ObjectIdentifier } from '@aws-sdk/client-s3';
 import Config from './Config';
 
 export default (config: Config) => {
