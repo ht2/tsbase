@@ -1,7 +1,7 @@
 {
   "extends": "./node_modules/@ht2-labs/typescript-project/configs/tsconfig.json",
   "compilerOptions": {
-    "lib": ["dom"],
+    "lib": ["es2020", "dom"],
     "rootDir": "src",
     "outDir": "dist",
     "typeRoots": [
