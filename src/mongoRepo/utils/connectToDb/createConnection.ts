@@ -13,7 +13,7 @@ export default async (config: Config, retries = 0): Promise<Connection> => {
     (db as any).s.topology.once('left', handleLeavingReplica(config));
     (db as any).s.topology.once('joined', handleJoiningReplica(config));
     return { client, db };
-  } catch (err) {
+  } catch (err: any) {
     config.logger.error(`Failed Mongo connection: ${err.message}`);
     return retryConnection(config, retries + 1);
   }
