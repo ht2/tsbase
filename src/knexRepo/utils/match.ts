@@ -1,4 +1,4 @@
-/* tslint:disable no-invalid-this no-use-before-declare no-this max-file-line-count */
+/* tslint:disable no-invalid-this no-this max-file-line-count */
 import { QueryBuilder } from 'knex';
 import { isObject } from 'lodash';
 import InvalidOp from '../../errors/InvalidOp';
