@@ -8,7 +8,6 @@ export default async (config: Config, connection: Promise<Connection> | undefine
   }
   try {
     const { client } = await connection;
-    console.log(config);
     return true;
   } catch (err) {
     return false;
