@@ -1,5 +1,9 @@
 {
   "extends": [
     "./node_modules/@ht2-labs/typescript-project/configs/tslint.json"
-  ]
+  ],
+  "rules": {
+    "no-unused": false,
+    "no-use-before-declare": false
+  }
 }
