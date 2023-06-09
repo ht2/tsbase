@@ -48,8 +48,8 @@
     "newrelic": "^7.4.0",
     "rulr": "^4.0.2",
     "uuid": "^3.2.1",
-    "winston": "^2.4.2",
-    "winston-aws-cloudwatch": "^2.0.0"
+    "winston": "^3.9.0",
+    "winston-cloudwatch": "^6.1.1"
   },
   "devDependencies": {
     "@ht2-labs/semantic-release": "^3.0.0",
