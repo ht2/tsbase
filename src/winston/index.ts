@@ -5,13 +5,15 @@ import Config from './Config';
 
 const getTime = () => moment().format('YYYY-MM-DD HH:mm:ss:SSS');
 
-const createConsoleTransport = (config: Config): winston.transport => new winston.transports.Console({
+const createConsoleTransport = (
+  config: Config,
+): winston.transport => new winston.transports.Console({
   format: winston.format.combine(
     winston.format.colorize(),
     winston.format.timestamp({
       format: getTime,
     }),
-    winston.format.prettyPrint()
+    winston.format.prettyPrint(),
   ),
   handleExceptions: true,
   level: config.console.level,
@@ -19,10 +21,13 @@ const createConsoleTransport = (config: Config): winston.transport => new winsto
 });
 
 const createAwsTransport = (config: Config): winston.transport => new CloudWatchTransport({
-  ...(config.cloudWatch.awsConfig.accessKeyId && config.cloudWatch.awsConfig.secretAccessKey ? {
-    awsAccessKeyId: config.cloudWatch.awsConfig.accessKeyId,
-    awsSecretKey: config.cloudWatch.awsConfig.secretAccessKey,
-  } : {}),
+  ...(config.cloudWatch.awsConfig.accessKeyId !== undefined &&
+    config.cloudWatch.awsConfig.secretAccessKey !== undefined
+      ? {
+          awsAccessKeyId: config.cloudWatch.awsConfig.accessKeyId,
+          awsSecretKey: config.cloudWatch.awsConfig.secretAccessKey,
+        }
+      : {}),
   awsRegion: config.cloudWatch.awsConfig.region,
   logGroupName: config.cloudWatch.logGroupName,
   logStreamName: config.cloudWatch.logStreamName,
