@@ -1,5 +1,5 @@
 import { Db } from 'mongodb';
-import { LoggerInstance } from 'winston';
+import { Logger } from 'winston';
 import Config from './Config';
 import Connection from './Connection';
 import createConnection from './createConnection';
@@ -7,7 +7,7 @@ import createConnection from './createConnection';
 export interface Opts {
   readonly maxRetries?: number;
   readonly retryGapMS?: number;
-  readonly logger: LoggerInstance;
+  readonly logger: Logger;
   readonly url: string;
   readonly dbName: string;
 }

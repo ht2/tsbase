@@ -1,8 +1,8 @@
-import { LoggerInstance } from 'winston';
+import { Logger } from 'winston';
 import Translator from '../translatorFactory/Translator';
 
 interface Config {
-  readonly logger: LoggerInstance;
+  readonly logger: Logger;
   readonly translator: Translator;
   readonly customRoute: string;
   readonly customRouteText: string;

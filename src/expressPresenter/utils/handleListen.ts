@@ -1,6 +1,6 @@
-import { LoggerInstance } from 'winston';
+import { Logger } from 'winston';
 
-export default (logger: LoggerInstance) => {
+export default (logger: Logger) => {
   const handleExit = (event: string) => {
     return (error?: any) => {
       if (error !== undefined) {

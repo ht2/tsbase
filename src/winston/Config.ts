@@ -8,8 +8,8 @@ interface Config {
     readonly logGroupName: string;
     readonly logStreamName: string;
     readonly awsConfig: {
-      readonly accessKeyId: string;
-      readonly secretAccessKey: string;
+      readonly accessKeyId?: string;
+      readonly secretAccessKey?: string;
       readonly region: string;
     };
   };
